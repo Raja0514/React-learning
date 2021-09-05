@@ -22,7 +22,7 @@
 
 //varibles delcaration  ----var ,let and const
 
-//var
+//var=================================================================
 
 //definition :
 
@@ -40,8 +40,7 @@
 
 // printNum();
 
-//============================================================================================
-//let
+//let===============================================================================
 
 //definition:
 
@@ -59,9 +58,7 @@
 
 // printNum1();
 
-//===========================================================================================
-
-//const
+//const==================================================================================
 
 //definition:
 
@@ -84,9 +81,11 @@
 // }
 // printNum();
 
-//objects
+//objects========================================================================
 
 //definition:
+
+//objects only have unique key and value
 
 // objects is nothing but key value ,the key value it can be anything string or number or char
 
@@ -132,7 +131,8 @@
 
 // console.log(object.values(person));
 
-//bind
+//bind and this keyword========================================================
+
 // const person = {
 //   firstname: "raja",
 //   lastname: "mathiyalagan",
@@ -156,17 +156,15 @@
 
 // name2();
 
-//Arrow function
+//Arrow function================================================================
 
 //syntax  ()=>{}
-
-// we can call fat arrow function
 
 // const person = {
 //   firstname: "alajmi marble",
 //   lastname: "al maha marble",
 //   getname() {
-//     setTimeout(function () {   // here we are using normal function 
+//     setTimeout(function () {   // here we are using normal function
 //       console.log(this);
 //     }, 3000);
 //   },
@@ -179,16 +177,129 @@
 // in the setTimeout == arrow func do not overwrite (this) operator its point out object key value
 // in the setTimeout == normal function overwrite (this)  operator its give output  window object
 // here we are not using function keyword
-//
+// we can write single line code
 
-const person2 = {
-  firstname: "alajmi marble",
-  lastname: "al maha marble",
-  getname() {
-    setTimeout( ()=> {      // here we are using arrow function
-      console.log(this);
-    }, 3000);
-  },
-};
+// const person2 = {
+//     firstname: "alajmi marble",
+//     lastname: "al maha marble",
+//     getname() {
+//       setTimeout( ()=> {      // here we are using arrow function
+//         console.log(this);
+//       }, 3000);
+//     },
+//   };
 
-person2.getname(); 
+//   person2.getname();
+
+// const key=()=>{
+//     console.log("welcome");
+// }
+// key
+
+// array functions=============================================
+// 1.map
+// 2.fillter
+
+// const arr=[{name:"tamil", active:"true"},{name:"guvi",active:"false"}];
+
+// console.log(arr.map((st) => "mr." + st.name));
+
+// console.log(arr.filter((st)=>st.active==="true"));
+
+// map=========
+
+//definition :
+//map is nothing but transforming new array
+//filter is nothing but filter something from an array
+
+//Destrcuturing=================================================
+
+//normal function
+
+// const person ={firstname:"guvi",lastname:"geeks"}
+
+// const lname=person.fisrtname;
+
+// const last1=person.lastname;
+
+// console.log(lname,last1);
+
+//object destructuring===============================================
+
+// const{firstname,lastname}=person;  // note:in the obj destructuring we give {} brackts
+
+// console.log(firstname,lastname);
+
+// we can give alais name destructuring
+
+// const{firstname:raja,lastname:kanna}=person;
+
+// console.log(raja,kanna);
+
+//array destructuring===================================================
+
+// this normal array function
+
+// const market=[{fish:"kingfisher"},{fish:"bron"}];
+
+// const mar1=market[0];
+
+// const mar2=market[1];
+
+// console.log(mar1,mar2);
+
+// array destrcturing
+
+// const[mar1,mar2]=market;
+
+// console.log(mar1,mar2);
+
+// speard opeartor in object==========================
+
+//definiton :
+
+// speard is nothing but we are going to combine the objects or array
+
+//const obj1 = { name: "guvi", age: 7 };
+
+//const obj2 = { ...obj1, city: "omic marble",age:46 };
+
+//const obj2={age:25,...obj1}
+
+//console.log(obj2);
+
+//spread opertor for array
+
+// const arr1=[1,2,3,45,50];
+// const arr2=[3,4,7,...arr1,9];
+// console.log(arr2);
+
+//async and await=========
+
+//need to more clear i did not understand
+
+//class==========
+
+//definition:
+//classes are a template for creating objects.
+//another definition
+//a javascript class is a blueprint for creating objects.
+
+//in otherwords, ES6 classes are just special function.
+
+// class person {
+//   constructor(firstname, lastname) {
+//     this.firstname = firstname;
+//     this.lastname = lastname;
+//   }
+
+//   getName() {
+//     return `${this.firstname}${this.lastname}`;
+//   }
+// }
+
+// const person1 = new person("tamil", "chennai");
+
+// console.log(person1.getName());
+
+
